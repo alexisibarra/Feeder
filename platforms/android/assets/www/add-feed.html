@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Agregar feed</title>
+   </head>
+   <body>
+      <div id="add-feed-page" data-role="page" data-title="Add Feed">
+         <header data-role="header">
+            <a href="index.html" data-icon="home" data-iconpos="notext">Inicio</a>
+            <h1>Agregar feed</h1>
+         </header>
+         <div data-role="content">
+            <p>
+							Use este formulario para agregar un nuevo feed. Es tan fácil como
+							escribir el nombre, el URL y hacer click en "Agregar Feed".
+            </p>
+            <form id="add-feed-form" name="add-feed-form" action="add-feed.html">
+               <div data-role="fieldcontain">
+                  <label for="feed-name">Nombre:</label>
+                  <input type="text" id="feed-name" name="feed-name" required="required"/>
+               </div>
+               <div data-role="fieldcontain">
+                  <label for="feed-url">URL:</label>
+                  <input type="url" id="feed-url" name="feed-url" required="required"/>
+               </div>
+               <input type="submit" value="Agregar feed" />
+            </form>
+         </div>
+      </div>
+   </body>
+</html>
